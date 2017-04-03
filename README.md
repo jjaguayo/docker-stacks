@@ -12,7 +12,7 @@ Nengo models.
 
 
 ```
-    docker run -it -restart=always -p 8888:8888 jjaguayo/nengo-scipy-jupyter
+    docker run -it --restart=always -p 8888:8888 jjaguayo/nengo-scipy-jupyter
 ```
 
 This [link](https://github.com/jupyter/docker-stacks/tree/master/scipy-notebook)
