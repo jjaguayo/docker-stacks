@@ -34,6 +34,10 @@ and run the following from the directory containing the file `Dockerfile`.
 This builds an image called `<your_local_build_name` and runs it in a 
 restartable container. 
 
+# Connecting to Jupyter hub
+
+When starting the hub, a URL is provided by the container app. Copy and paste the URL into a browser to connect to the hub.
+
 # Installing Docker
 
 If you have not installed Docker, the following links provide instructions for
