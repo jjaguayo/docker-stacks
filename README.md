@@ -2,6 +2,7 @@
 
 ## What it gives you 
 
+* Jupyter Notebook 4.3
 * Scientific Python Stack
 * Nengo 2.3.1
 
