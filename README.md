@@ -32,7 +32,7 @@ and run the following from the directory containing the file `Dockerfile`.
     docker run -it --restart=always -p 8888:8888 <your_local_build_name>
 ```
 
-This builds an image called `<your_local_build_name` and runs it in a 
+The first command builds an image called `<your_local_build_name>` and the second command runs it in a 
 restartable container. 
 
 # Connecting to Jupyter hub
