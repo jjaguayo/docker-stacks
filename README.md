@@ -5,11 +5,9 @@
 * Scientific Python Stack
 * Nengo 2.3.1
 
-# Basic Use
+# Basic Usage
 
-The following command downloads an image from DockerHub and starts a container
-using the image `jjaguayo/nengo-scipy-jupyter`. The image has a Jupyter 
-notebook server, listening for HTTP connections on port 8888, capable of 
+After installing Docker, the following command downloads an image from DockerHub and starts a container using the image `jjaguayo/nengo-scipy-jupyter`. The image has a Jupyter notebook server, listening for HTTP connections on port 8888, capable of 
 running Nengo models.
 
 ```
@@ -41,9 +39,9 @@ restartable container.
 If you have not installed Docker, the following links provide instructions for
 installing on
 
-    [Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntu/)
-    [Mac OS X](https://docs.docker.com/docker-for-mac/install/)
-    [Windows 10](https://docs.docker.com/docker-for-windows/install/)
+* [Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntu/) (14.04 or later)
+* [Mac OS X](https://docs.docker.com/docker-for-mac/install/) (Hardware releases 2010 or later)
+* [Windows 10](https://docs.docker.com/docker-for-windows/install/)
 
 Note that there are minimum requirements for each platform so check the 
 [Docker documentation](https://docs.docker.com/engine/installation/) for more
