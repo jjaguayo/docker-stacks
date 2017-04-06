@@ -16,8 +16,11 @@ has a Jupyter notebook server, listening for HTTP connections on port 8888,
 capable of running Nengo models.
 
 ```
-    docker run -it --restart=always -p 8888:8888 jjaguayo/nengo-scipy-jupyter
+    docker run -it --restart=always -v <absolute-path-on-host>:/home/jovyan/work -p 8888:8888 jjaguayo/nengo-scipy-jupyter
 ```
+
+Remember to replace ```<absolute-path-on-host>``` with the absolute path to the
+directory you want to share with the container.
 
 This [link](https://github.com/jupyter/docker-stacks/tree/master/scipy-notebook)
 gives more information on the Scientific Python Stack (provided by Jupyter) used
@@ -54,21 +57,21 @@ the following will run a container and not restart it if the application ends or
 the container is stopped.
 
 ```
-    docker run -it --rm -v /home/myhomedir/nbwork:/home/jovyan/work -p 8890:88888 jjaguayo/nengo-scipy-jupyter
+    docker run -it --rm -v <absolute-path-on-host>:/home/jovyan/work -p 8890:8888 jjaguayo/nengo-scipy-jupyter
 ```
 
 ## Sharing a filesystem between host and container
 
 Data stored in the jupyter notebook can be shared with a directory in your host
 using the -v option. For example, the following shares the data stored in the
-jupyter notebook with the directory ```/home/myhomedir/nbwork``` on my machine
+jupyter notebook with the directory ```<absolute-path-on-host>``` on my machine
 hosting the container.
 
 ```
-    docker run -it --restart=always -v /home/myhomedir/nbwork:/home/jovyan/work -p 8888:88888 jjaguayo/nengo-scipy-jupyter
+    docker run -it --restart=always -v <absolute-path-on-host>:/home/jovyan/work -p 8888:8888 jjaguayo/nengo-scipy-jupyter
 ```
 
-Remember to replace ```/home/myhomedir/nbwork``` with the absolute path to the
+Remember to replace ```<absolute-path-on-host>``` with the absolute path to the
 directory you want to share with the container.
 
 ## Using a non-default port
@@ -79,8 +82,10 @@ a different host port can be used by changing the first number in the
 port 8888 in the container.
 
 ```
-    docker run -it --restart=always -v /home/myhomedir/nbwork:/home/jovyan/work -p 8890:88888 jjaguayo/nengo-scipy-jupyter
+    docker run -it --restart=always -v <absolute-path-on-host>:/home/jovyan/work -p <available-host-port-id>:8888 jjaguayo/nengo-scipy-jupyter
 ```
+
+Remember to change ```<available-host-port-id>``` to an accessible port id on the host.
 
 # Building a local image
 
